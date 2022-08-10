@@ -70,6 +70,18 @@ a {
   color: white;
 }
 
+@media (max-width: 83rem) {
+  .main-nav {
+		gap: 1rem;
+		padding-right: 2rem;
+	}
+	
+	.main-nav a {
+    font-size: 18px;
+		padding: 0.5rem;
+  }
+}
+
 @media (max-width: 43rem) {
   .main-nav a {
     display: none;
@@ -164,6 +176,17 @@ header div {
   color: var(--gray);
 }
 
+@media (max-width: 83rem) {
+  .about-me-container {
+    width: 700px;
+    padding-bottom: 3rem;
+  }
+  .about-me-container p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
 @media (max-width: 43rem) {
   .about-me-container {
     width: 340px;
@@ -174,6 +197,7 @@ header div {
     line-height: 20px;
   }
 }
+
 
 .skills-container h2 {
   padding-bottom: 2rem;
@@ -219,6 +243,16 @@ header div {
 
 .skill-icon-container img {
   margin: 1.5rem;
+}
+
+@media (max-width: 83rem) {
+  .skill-icon-container {
+    width: 120px;
+    height: 120px;
+  }
+  .skill-card-container h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 43rem) {
@@ -285,6 +319,26 @@ header div {
   filter: brightness(18%);
 }
 
+@media (max-width: 83rem) {
+  .experience-container {
+		padding-bottom: 2rem;
+	}
+	.experience-container div {
+		font-size: 36px;
+	}
+	.experience-card {
+		gap: 6rem;
+		padding-bottom: 1rem;
+	}
+	.card-description {
+		width: 20rem;
+		color: var(--gray);
+	}
+	.underline {
+		width: 595px;
+	}
+}
+
 @media (max-width: 43rem) {
 	.experience-container {
 		padding-bottom: 2rem;
@@ -293,13 +347,15 @@ header div {
 		font-size: 16px;
 	}
 	.experience-card {
-		display: flex;
 		gap: 6rem;
 		padding-bottom: 1rem;
 	}
 	.card-description {
 		width: 9rem;
 		color: var(--gray);
+	}
+	.underline {
+		width: 318.6px;
 	}
 }
 
@@ -316,6 +372,23 @@ header div {
 .demo-image-container img {
   width: 400px;
   height: 300px;
+}
+
+@media (max-width: 83rem) {
+  .portfolio-container {
+		padding-top: 0.5rem;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.demo-image-container{
+		margin:auto;
+	}
+
+	.demo-image-container img {
+		width: 640px;
+		height: 540px;
+	}
 }
 
 @media (max-width: 43rem) {
@@ -377,6 +450,7 @@ header div {
   width: 58px;
   height: 58px;
 }
+
 
 @media (max-width: 43rem) {
 	.contact-container {
