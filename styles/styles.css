@@ -27,17 +27,23 @@ body {
 
 h1 {
   font-size: 100px;
-	font-weight: 600;
-	text-align: center;
-	margin: auto;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
 }
 
 h2 {
-	font-size: 60px;
-	margin: auto;
-	text-align: center;
-	font-weight: 600;
-	padding: 1.5rem;
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
+@media (max-width: 43rem) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
 a {
@@ -49,217 +55,356 @@ a {
   justify-content: flex-end;
   padding-top: 2rem;
   padding-right: 9rem;
-	gap: 2.5rem;
+  gap: 2.5rem;
 }
 
 .main-nav a {
   color: var(--gray);
   display: inline-block;
   padding: 1.5rem;
-	font-size: 25px;
-	font-weight: 400;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .main-nav a:hover {
-	color: white;
+  color: white;
+}
+
+@media (max-width: 43rem) {
+  .main-nav a {
+    display: none;
+  }
+  .main-nav {
+    content: url(../Icons/burger.png);
+    margin: 0 295px;
+  }
 }
 
 .profile-photo-container {
   display: flex;
-	justify-content: center;
-	padding: 7rem;
-	padding-bottom: 5rem;
+  justify-content: center;
+  padding: 7rem;
+  padding-bottom: 5rem;
 }
 
 .profile-photo-container img {
   content: url("../Images/Rectangle\ 45.png");
-	width: 450px;
+  width: 450px;
+}
+
+@media (max-width: 43rem) {
+  .profile-photo-container {
+    padding: 2rem;
+  }
+
+  .profile-photo-container img {
+    width: 170px;
+  }
 }
 
 header div {
-	font-size: 65px;
-	text-align: center;
-	margin: auto;
-	color: var(--gray);
-	font-weight: 600;
-	padding-bottom: 2rem;
+  font-size: 65px;
+  text-align: center;
+  margin: auto;
+  color: var(--gray);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 43rem) {
+  header div {
+    font-size: 25px;
+    padding: 0;
+  }
+  h1 {
+    width: 300px;
+    font-size: 38px;
+  }
 }
 
 .profile-icons-container {
-	display: flex;
-	justify-content: center;
-	gap: 8rem;
-	padding:2rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  padding: 2rem;
 }
 
 .profile-icons-container img {
-	width: 80px;
-	height: 80px;
-	filter: brightness(70%);
+  width: 80px;
+  height: 80px;
+  filter: brightness(70%);
+}
+
+@media (max-width: 43rem) {
+  .profile-icons-container {
+    gap: 1.5rem;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .profile-icons-container img {
+    width: 42px;
+    height: 42px;
+    filter: brightness(70%);
+  }
 }
 
 .about-me-container {
-	padding-top: 2rem;
-	padding-bottom: 6.5rem;
+  padding-top: 2rem;
+  padding-bottom: 6.5rem;
+  width: 1200px;
+  margin: auto;
 }
 
 .about-me-container p {
-	text-align: center;
-	margin: auto;
-	font-size: 30px;
-	line-height: 40px;
-	color: var(--gray);
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--gray);
+}
+
+@media (max-width: 43rem) {
+  .about-me-container {
+    width: 340px;
+    padding-bottom: 3rem;
+  }
+  .about-me-container p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .skills-container h2 {
-	padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .skill-column {
-	display: flex;
-	flex-direction: column;
-	padding: 4.5rem;
-	padding-top:1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4.5rem;
+  padding-top: 1rem;
 }
 
 .icons-container {
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 5rem;
-	margin-left: -5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-left: -5.5rem;
 }
 
 .skill-card-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin:auto;
-	padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 4rem;
 }
 
-.skill-card-container h3{
-	align-items: center;
+.skill-card-container h3 {
+  align-items: center;
 }
 
-.skill-icon-container{
-	background: #1c1616;
-	border-radius: 50%;
-	width: 140px;
-	height: 140px;
-	display: flex;
+.skill-icon-container {
+  background: #1c1616;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.skill-icon-container img{
-	margin: 1.5rem;
+.skill-icon-container img {
+  margin: 1.5rem;
+}
+
+@media (max-width: 43rem) {
+  .icons-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0;
+  }
+  .skill-column {
+    padding: 0;
+  }
+  .skill-card-container {
+    padding: 0.5rem;
+  }
+  .skill-icon-container {
+    width: 85px;
+    height: 85px;
+  }
+  .skill-card-container h3 {
+    font-size: 15px;
+  }
 }
 
 .experience-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	margin: auto;
-	padding: 2rem;
-	padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2rem;
+  padding-bottom: 5rem;
 }
 
 .experience-container div {
-	font-size: 35px;
+  font-size: 35px;
 }
 
 .experience-card {
-	display: flex;
-	gap: 20rem;
-	padding-bottom: 1rem;
+  display: flex;
+  gap: 20rem;
+  padding-bottom: 1rem;
 }
 
 .card-year {
-	width: fit-content;
-	height: fit-content;
-	padding-top: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 20px;
 }
 
 .card-title {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .card-description {
-	width: 45rem;
-	color: var(--gray);
+  width: 45rem;
+  color: var(--gray);
 }
 
 .underline {
-	width: 1215px;
-	padding: 1rem;
-	border-top-style: solid;
-	border-top-color: var(--gray);
-	filter: brightness(18%);
+  width: 1215px;
+  padding: 1rem;
+  border-top-style: solid;
+  border-top-color: var(--gray);
+  filter: brightness(18%);
+}
+
+@media (max-width: 43rem) {
+	.experience-container {
+		padding-bottom: 2rem;
+	}
+	.experience-container div {
+		font-size: 16px;
+	}
+	.experience-card {
+		display: flex;
+		gap: 6rem;
+		padding-bottom: 1rem;
+	}
+	.card-description {
+		width: 9rem;
+		color: var(--gray);
+	}
 }
 
 .portfolio-container {
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 8.5rem;
-	padding-top: 2.5rem;
-	padding-bottom: 5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 
-.demo-image-container img{
-	width: 400px;
-	height: 300px;
+.demo-image-container img {
+  width: 400px;
+  height: 300px;
+}
+
+@media (max-width: 43rem) {
+	.portfolio-container {
+		padding-top: 0.5rem;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.demo-image-container{
+		margin:auto;
+	}
+
+	.demo-image-container img {
+		width: 340px;
+		height: 240px;
+	}
 }
 
 .contact-container {
-	width: 415px;
-	padding-top: 20px;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 5rem;
+  width: 415px;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 .contact-card-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray);
 }
 
-.contact-card-container h4{
-	margin: 5px;
+.contact-card-container h4 {
+  margin: 5px;
 }
 
-.contact-card-container p{
-	margin: 5px;
+.contact-card-container p {
+  margin: 5px;
 }
 
 .contact-icon-container {
-	margin-bottom: 15px;
-	border: solid;
-	border-width: thin;
-	border-color: white;
-	border-radius: 90%;
-	width: 100px;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  margin-bottom: 15px;
+  border: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 90%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-icon-container img{
-	width: 58px;
-	height: 58px;
+.contact-icon-container img {
+  width: 58px;
+  height: 58px;
 }
 
-footer p{
-	padding: 2.5rem;
-	padding-bottom: 1rem;
-	text-align: center;
-	color: var(--gray);
-	font-size: 20px;
+@media (max-width: 43rem) {
+	.contact-container {
+		width: 320px;
+		gap: 1rem;
+	}
+	.contact-icon-container {
+		width: 80px;
+		height: 80px;
+	}
+	.contact-card-container h4 {
+		margin: 0;
+		font-size: 16px;
+	}
+	.contact-card-container p {
+		margin: 0;
+		font-size: 15px;
+	}
+	.contact-icon-container img {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+footer p {
+  padding: 2.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: var(--gray);
+  font-size: 20px;
 }
