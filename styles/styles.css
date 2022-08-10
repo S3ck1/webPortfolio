@@ -1,0 +1,98 @@
+:root {
+  --black: #020403;
+  --gray: #adadad;
+}
+
+html {
+  font-size: 65.5;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: white;
+  background: var(--black);
+}
+
+.subtitle {
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 100px;
+	font-weight: 600;
+	text-align: center;
+	margin: auto;
+}
+
+h2 {
+	font-size: 60px;
+	margin: auto;
+	text-align: center;
+	font-weight: 600;
+	padding: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+  padding-right: 9rem;
+	gap: 2.5rem;
+}
+
+.main-nav a {
+  color: var(--gray);
+  display: inline-block;
+  padding: 1.5rem;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.main-nav a:hover {
+	color: white;
+}
+
+.profile-photo-container {
+  display: flex;
+	justify-content: center;
+	padding: 7rem;
+	padding-bottom: 5rem;
+}
+
+.profile-photo-container img {
+  content: url("../Images/Rectangle\ 45.png");
+	width: 450px;
+}
+
+header div {
+	font-size: 65px;
+	text-align: center;
+	margin: auto;
+	color: var(--gray);
+	font-weight: 600;
+	padding-bottom: 2rem;
+}
+
+.profile-icons-container {
+	display: flex;
+	justify-content: center;
+	gap: 8rem;
+	padding:2rem;
+}
+
+.profile-icon {
+	width: 80px;
+	height: 80px;
+}
